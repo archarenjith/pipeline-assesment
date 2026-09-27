@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Stack: Up",
+      "type": "shell",
+      "command": "docker compose up -d",
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Stack: Down",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": []
+    },
+    {
+      "label": "Stack: Logs (Airflow webserver)",
+      "type": "shell",
+      "command": "docker compose logs -f airflow-webserver",
+      "problemMatcher": []
+    },
+    {
+      "label": "Stack: Logs (Superset)",
+      "type": "shell",
+      "command": "docker compose logs -f superset",
+      "problemMatcher": []
+    },
+    {
+      "label": "Stack: Logs (ClickHouse)",
+      "type": "shell",
+      "command": "docker compose logs -f clickhouse",
+      "problemMatcher": []
+    },
+    {
+      "label": "Stack: Status",
+      "type": "shell",
+      "command": "docker compose ps",
+      "problemMatcher": []
+    }
+  ]
+}
